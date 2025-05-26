@@ -1,0 +1,86 @@
+import React from 'react';
+import { Instagram, Twitter, Youtube } from 'lucide-react';
+import Logo from '@/components/icon/logo';
+// import Logo from './Logo';
+
+interface FooterColumnProps {
+  title: string;
+  links: string[];
+}
+
+const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
+  return (
+    <div className="mb-8 md:mb-0">
+      <h3 className="font-bold text-[var(--neutral-400)] mb-4">{title}</h3>
+      <ul className="space-y-3">
+        {links.map((link, index) => (
+          <li key={index}>
+            <a 
+              href="#" 
+              className="text-[var(--neutral-400)] hover:text-primary transition-colors duration-200"
+            >
+              {link}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const Footer: React.FC = () => {
+  const footerData = [
+    {
+      title: 'Company',
+      links: ['Our Mission', 'Our Vision', 'Our Story', 'Meet Our Team'],
+    },
+    {
+      title: 'Features',
+      links: ['Flexible Loan Options', 'Fast Approval Process', 'Multiple Country Support', 'Smart AI Assistance'],
+    },
+    {
+      title: 'Resources',
+      links: ['Blog', 'Case Studies', 'Whitepapers', 'eBooks'],
+    },
+    {
+      title: 'Legal & Policies',
+      links: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Data Protection'],
+    },
+  ];
+
+  return (
+    <footer className="bg-white py-12 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {footerData.map((column, index) => (
+            <FooterColumn 
+              key={index} 
+              title={column.title} 
+              links={column.links} 
+            />
+          ))}
+        </div>
+        
+        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
+          <div className="mb-4 sm:mb-0 flex gap-2">
+            <Logo/>
+              <span className="text-black font-semibold text-sm sm:text-lg">Quessia</span>
+          </div>
+          <div className="flex space-x-6">
+            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+              <Instagram size={20} />
+            </a>
+            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+              <Twitter size={20} />
+            </a>
+            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+              <Youtube size={20} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
