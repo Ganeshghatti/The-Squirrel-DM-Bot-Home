@@ -3,7 +3,7 @@
 import React from "react";
 import BgGradient from "./bgGradient";
 import { motion } from "framer-motion";
-import { Download, Zap, BarChart3, Rocket } from "lucide-react";
+import { Download, BarChart3, Rocket } from "lucide-react";
 import Link from "next/link";
 
 function HeroSection() {

@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +20,7 @@ function Trending() {
           >
             <div className=" ">
               <h2 className="text-3xl md:text-4xl font-medium mb-4">
-                Know What's Trending
+                Know What&apos;s Trending
                 <br />
                 Before Everyone Else
               </h2>

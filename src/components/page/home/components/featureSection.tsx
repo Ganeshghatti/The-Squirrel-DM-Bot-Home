@@ -4,8 +4,6 @@ import Automation from "@/components/icon/automation";
 import Content from "@/components/icon/content";
 import RealTime from "@/components/icon/realTime";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
-import { BarChart, Clock, Pen } from "lucide-react";
 import Link from "next/link";
 
 const FeatureSection = () => {
