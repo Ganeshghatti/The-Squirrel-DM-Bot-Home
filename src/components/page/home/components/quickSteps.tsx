@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import QuickStepsImage from "../../../../../assets/images/quickSteps.png";
+import QuickStepsImage from "../../../../../assets/images/QuickSteps.png";
 
 function QuickSteps() {
   return (
