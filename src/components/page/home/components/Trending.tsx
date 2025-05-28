@@ -20,14 +20,12 @@ function Trending() {
           >
             <div className=" ">
               <h2 className="text-3xl md:text-4xl font-medium mb-4">
-                Know What&apos;s Trending
+                Engage Instantly With
                 <br />
-                Before Everyone Else
+                Smart DM Triggers
               </h2>
               <p className="text-[var(--neutral-400)] mb-6">
-                Stay one step ahead with insights that help you create relevant
-                content, make smarter decisions, and stay in tune with what your
-                audience cares about.
+                Convert comments into conversations. Our AI listens for specific keywords in your post comments and instantly sends personalized DMs. Perfect for leads, demos, and promotions—fully automated.
               </p>
               <Link
                 href="/learn-more"

@@ -10,15 +10,15 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Quessia saves me hours every week. I just type in a question, and it gives me instant, reliable answers—no more digging!",
+      "Flow saved me hours every week by replying to comments instantly. My audience loves the quick replies!",
     name: "Sofia M.",
     title: "Marketing Manager",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg",
   },
   {
     id: 2,
     quote:
-      "As a designer, I love how Quessia helps me explore design patterns and get clarity on user behavior quickly.",
+      "I used to miss leads in comments. Now Flow captures them all automatically — it's like having a social media assistant!",
     name: "Daniel K.",
     title: "UI Designer",
     image: "/placeholder.svg?height=400&width=400",
@@ -26,7 +26,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "Whether it's technical questions or strategy advice, it delivers answers that actually help us move forward. I really love it!",
+      "From 10 DMs a day to 200+ — and I didn’t even touch my phone. Flow is a game changer.",
     name: "Kimberly R.",
     title: "Co-founder of NovaStack",
     image: "/placeholder.svg?height=400&width=400",
@@ -34,7 +34,7 @@ const testimonials = [
   {
     id: 4,
     quote:
-      "Quessia has transformed how our team researches. The speed and accuracy are unmatched by any other tool we've used.",
+      "I finally feel in control of my engagement. Flow handles the replies, and I focus on growing my brand.",
     name: "Alex J.",
     title: "Product Manager",
     image: "/placeholder.svg?height=400&width=400",
@@ -42,7 +42,7 @@ const testimonials = [
   {
     id: 5,
     quote:
-      "I was skeptical at first, but Quessia has become indispensable for our content team. It's like having an expert researcher on call 24/7.",
+      "Flow turned my comment section into a lead magnet. It's the smartest tool I've added to my marketing stack.",
     name: "Priya T.",
     title: "Content Strategist",
     image: "/placeholder.svg?height=400&width=400",
@@ -196,8 +196,8 @@ export default function UserAreSaying() {
                         <Image
                           src={testimonial.image || "/placeholder.svg"}
                           alt={`${testimonial.name}'s profile`}
-                          width={100}
-                          height={100}
+                          width={400}
+                          height={400}
                           className="object-cover"
                         />
                       </motion.div>

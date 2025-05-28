@@ -16,12 +16,14 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Your{" "}
+          AI
+          
           <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
-            AI-Powered
+            {" "}Assistant
           </span>
           <br />
-          Answer Engine
+          in Instagram
+            
         </motion.h1>
         
         <motion.p 
@@ -30,8 +32,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Whether you&apos;re seeking quick facts, creative ideas, or in-depth
-          explanations, Quessia is always ready to help you move forward.
+          Automate your Instagram conversations, collect leads like emails and phone numbers, and track your performance with smart chat analytics — all in one powerful dashboard.
         </motion.p>
         
         <motion.div 

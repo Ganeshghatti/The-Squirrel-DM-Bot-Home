@@ -10,19 +10,19 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <Content />,
-      title: "Write High-Quality Content",
-      description: "Generate blogs, headlines, emails, and more—instantly.",
+      title: "Automated DM Replies",
+      description: "Respond to DMs instantly based on keywords and triggers — even while you sleep.",
     },
     {
       icon: <Automation/>,
-      title: "Save Time with Automation",
+      title: "Collect Leads Without Lifting a Finger",
       description:
-        "Let AI handle repetitive tasks so you can focus on what matters.",
+        "Capture user info like emails and phone numbers straight from the chat.",
     },
     {
       icon: <RealTime/>,
-      title: "Track Performance in Real-Time",
-      description: "Get insights into what's working—and what's not.",
+      title: " Real-Time Chat Analytics",
+      description: "See what’s working in your DMs — track replies, conversions, and response times effortlessly.",
     },
   ];
 
@@ -36,11 +36,10 @@ const FeatureSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium mb-4 md:mb-6">
-            Where smart tools meet simple solutions
+            Where AI Meets Instagram Growth
           </h2>
           <p className="text-[var(--neutral-400)] mb-6 md:mb-8 text-base md:text-lg">
-            Quessia provides smart, intuitive tools to help you move faster,
-            work smarter, and scale without the stress.
+          Supercharge your DMs with automation, lead capture, and smart insights — built for creators, coaches, and small businesses.
           </p>
           <Link
             href="/learn-more"

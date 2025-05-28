@@ -13,7 +13,7 @@ function Feedback() {
       <div className="max-w-6xl lg:max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-5">
           <motion.div
-            className="w-full md:w-1/2 md:h-[630px]"
+            className="w-full md:w-1/2 md:h-[730px]"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -28,7 +28,7 @@ function Feedback() {
                   // fill
                   placeholder="blur"
                   width={400}
-                  height={278     }
+                  height={496     }
                   sizes="100%"
                   className="object-cover  w-full"
                 />
@@ -44,15 +44,14 @@ function Feedback() {
           >
             <div className="md:pl-10">
               <h2 className="text-3xl md:text-4xl font-medium">
-                Instant Feedback from
+                Instantly Engage, Qualify
               </h2>
               <h2 className="text-3xl md:text-4xl font-medium mb-4">
-                Your Previous Interviews
+                & Convert Leads
               </h2>
               <p className="text-lg text-[var(--neutral-400)] mb-6 max-w-[620px]">
-                Upload your interview recording or transcript and let our AI
-                analyze it in seconds. Get detailed feedback on your answers,
-                tone, clarity, and more.
+                Let our AI take over your Instagram DMs — automatically collect names, emails, and phone numbers, and guide your audience toward your services or products.
+No more missed messages, no more manual replies.
               </p>
               <Link
                 href="/learn-more"

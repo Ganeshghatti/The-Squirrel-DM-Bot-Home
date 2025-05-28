@@ -9,11 +9,11 @@ const CTASection: React.FC = () => {
       <div className="flex flex-col rounded-xl md:flex-row bg-primary overflow-hidden relative ">
         <div className=" text-white p-10 md:p-14 w-full rounded-xl">
           <h2 className="text-4xl md:text-5xl font-medium mb-4">
-            Ready to Ask Smarter?<br />
+            Ready to Automate?<br />
             Go with Quessia!
           </h2>
           <p className="mb-8 text-purple-100">
-            Instant, accurate answers at your fingertips—powered by AI
+            Automate and enhance client communication via Instagram DMs using AI.
           </p>
           <button className="bg-white text-purple-600 font-medium py-3 px-6 rounded-full hover:bg-purple-100 transition-colors duration-300">
             Try Quessia Now
