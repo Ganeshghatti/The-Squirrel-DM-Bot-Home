@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Twitter, Youtube } from 'lucide-react';
-import Logo from '@/components/icon/logo';
+import Image from 'next/image';
+import Logo from "../../../../assets/images/logo.png";
 // import Logo from './Logo';
 
 interface FooterColumnProps {
@@ -62,8 +63,12 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
-          <div className="mb-4 sm:mb-0 flex gap-2">
-            <Logo/>
+          <div className="mb-4 sm:mb-0 flex gap-2 items-center">
+              <Image
+                src={Logo}
+                alt="Logo"
+                className="h-8 w-8 sm:h-10 sm:w-10"
+              />
               <span className="text-black font-semibold text-sm sm:text-lg">Quessia</span>
           </div>
           <div className="flex space-x-6">

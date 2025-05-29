@@ -50,7 +50,7 @@ function HeroSection() {
         </motion.div>
         
         <motion.div 
-          className=" flex flex-wrap justify-center items-center md:gap-x-12 gap-y-4 text-base font-medium text-foreground"
+          className=" flex flex-wrap justify-center items-center gap-x-12 gap-y-4 text-base font-medium text-foreground"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -59,12 +59,12 @@ function HeroSection() {
             <Download className="h-5 w-5 text-foreground" />
             <span>60K+ downloads</span>
           </div>
-          <div className="h-3 w-3 rounded-full bg-black"></div>
+          <div className=" hidden sm:block h-3 w-3 rounded-full bg-black"></div>
           <div className="flex items-center gap-2">
             <Rocket className="h-5 w-5 text-foreground" />
             <span>3x faster than manual</span>
           </div>
-            <div className="h-3 w-3 rounded-full bg-black"></div>
+            <div className="hidden sm:block h-3 w-3 rounded-full bg-black"></div>
           <div className="flex items-center gap-2">
             <BarChart3 className="h-5 w-5 text-foreground" />
             <span>100+ use case</span>
