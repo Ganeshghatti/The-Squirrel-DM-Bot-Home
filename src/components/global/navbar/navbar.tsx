@@ -32,17 +32,16 @@ const Navbar = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
               <span className="hidden sm:block text-white font-semibold text-sm sm:text-lg">
-                Quessia
+                Squirrel
               </span>
             </Link>
 
             <div className="flex items-center space-x-4 sm:space-x-6 text-sm sm:text-base">
               <Link
-                href="/about"
+                href=""
                 className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
               >
                 About
@@ -58,23 +57,47 @@ const Navbar = () => {
                 </button>
                 {featuresOpen && (
                   <div className="absolute mt-1 sm:mt-2 w-40 sm:w-48 bg-white rounded-md shadow-lg py-1 z-50 text-sm">
-                    <Link
-                      href="/features/chat"
+                    <span
+                    // href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
                       AI Chat
-                    </Link>
+                    </span>
                     <Link
-                      href="/features/content"
+                    href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
-                      Content Generation
+                      Auto User Data Collection
                     </Link>
                     <Link
-                      href="/features/research"
+                      href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
-                      Research Assistant
+                      Chat Interaction Analytics
+                    </Link>
+                    <Link
+                    href=""
+                      className="block px-3 py-1.5 hover:bg-gray-100"
+                    >
+                      AI Lead Classification
+                    </Link>
+                    <Link
+                    href=""
+                      className="block px-3 py-1.5 hover:bg-gray-100"
+                    >
+                      User Segmentation
+                    </Link>
+                    <Link
+                    href=""
+                    className="block px-3 py-1.5 hover:bg-gray-100"
+                    >
+                      Smart Coupon System
+                    </Link>
+                    <Link
+                      href=""
+                      className="block px-3 py-1.5 hover:bg-gray-100"
+                    >
+                      Auto Product Info Delivery
                     </Link>
                   </div>
                 )}
@@ -91,19 +114,19 @@ const Navbar = () => {
                 {solutionsOpen && (
                   <div className="absolute mt-1 sm:mt-2 w-40 sm:w-48 bg-white rounded-md shadow-lg py-1 z-50 text-sm">
                     <Link
-                      href="/solutions/enterprise"
+                      href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
                       Enterprise
                     </Link>
                     <Link
-                      href="/solutions/education"
+                    href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
                       Education
                     </Link>
                     <Link
-                      href="/solutions/developers"
+                      href=""
                       className="block px-3 py-1.5 hover:bg-gray-100"
                     >
                       Developers
@@ -113,15 +136,16 @@ const Navbar = () => {
               </div>
 
               <Link
-                href="/partner"
+                href=""
                 className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
               >
-                Partner
+                Contact
               </Link>
             </div>
 
             <Link
-              href="/register"
+              href="https://dashboard.thesquirrel.tech"
+              target="_blank"
               className="bg-white hidden sm:block text-black font-medium rounded-full px-4 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base hover:bg-gray-100 transition-colors "
             >
               Register Now
@@ -133,7 +157,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
             <Image src={Logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10" />
             <span className="text-black font-semibold text-sm sm:text-lg">
-              Quessia
+              Squirrel
             </span>
           </Link>
 
@@ -153,7 +177,7 @@ const Navbar = () => {
                       className="h-8 w-8 sm:h-10 sm:w-10"
                     />
                     <span className="text-black font-semibold text-lg">
-                      Quessia
+                      Squirrel
                     </span>
                   </div>
                   {/* <SheetClose asChild>
@@ -168,7 +192,7 @@ const Navbar = () => {
                 {/* About Link */}
                 <SheetClose asChild>
                   <Link
-                    href="/about"
+                  href=""
                     className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
                   >
                     About
@@ -192,7 +216,7 @@ const Navbar = () => {
                     <div className="ml-4 mt-2 space-y-2">
                       <SheetClose asChild>
                         <Link
-                          href="/features/chat"
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           AI Chat
@@ -200,18 +224,50 @@ const Navbar = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                          href="/features/content"
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
-                          Content Generation
+                          Auto User Data Collection
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                          href="/features/research"
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
-                          Research Assistant
+                          Chat Interaction Analytics
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href=""
+                          className="block text-gray-600 hover:text-black transition-colors py-2"
+                        >
+                          AI Lead Classification
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                          href=""
+                          className="block text-gray-600 hover:text-black transition-colors py-2"
+                        >
+                          User Segmentation
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                        href=""
+                          className="block text-gray-600 hover:text-black transition-colors py-2"
+                        >
+                          Smart Coupon System
+                        </Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link
+                        href=""
+                          className="block text-gray-600 hover:text-black transition-colors py-2"
+                        >
+                          Auto Product Info Delivery
                         </Link>
                       </SheetClose>
                     </div>
@@ -235,7 +291,7 @@ const Navbar = () => {
                     <div className="ml-4 mt-2 space-y-2">
                       <SheetClose asChild>
                         <Link
-                          href="/solutions/enterprise"
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           Enterprise
@@ -243,7 +299,7 @@ const Navbar = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                          href="/solutions/education"
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           Education
@@ -251,7 +307,7 @@ const Navbar = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                          href="/solutions/developers"
+                        href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           Developers
@@ -264,10 +320,10 @@ const Navbar = () => {
                 {/* Partner Link */}
                 <SheetClose asChild>
                   <Link
-                    href="/partner"
+                  href=""
                     className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
                   >
-                    Partner
+                    Contact
                   </Link>
                 </SheetClose>
 
@@ -275,7 +331,7 @@ const Navbar = () => {
                 <div className="pt-4">
                   <SheetClose asChild>
                     <Link
-                      href="/register"
+                      href="https://dashboard.thesquirrel.tech"
                       className="block w-full bg-black text-white font-medium rounded-full px-6 py-3 text-center hover:bg-gray-800 transition-colors"
                     >
                       Register Now

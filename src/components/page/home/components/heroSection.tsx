@@ -41,7 +41,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Link href="/get-started" className="bg-primary hover:bg-primary/80 text-white px-8 py-3 rounded-full font-medium transition-colors">
+          <Link href="https://dashboard.thesquirrel.tech" className="bg-primary hover:bg-primary/80 text-white px-8 py-3 rounded-full font-medium transition-colors">
             Get Started
           </Link>
           <Link href="/how-it-works" className="bg-white border border-primary text-primary rounded-full font-medium hover:primary/80 px-8 py-3 transition-colors">
@@ -57,7 +57,7 @@ function HeroSection() {
         >
           <div className="flex items-center gap-2">
             <Download className="h-5 w-5 text-foreground" />
-            <span>60K+ downloads</span>
+            <span>100 downloads</span>
           </div>
           <div className=" hidden sm:block h-3 w-3 rounded-full bg-black"></div>
           <div className="flex items-center gap-2">
@@ -67,7 +67,7 @@ function HeroSection() {
             <div className="hidden sm:block h-3 w-3 rounded-full bg-black"></div>
           <div className="flex items-center gap-2">
             <BarChart3 className="h-5 w-5 text-foreground" />
-            <span>100+ use case</span>
+            <span>10+ use case</span>
           </div>
         </motion.div>
       </div>

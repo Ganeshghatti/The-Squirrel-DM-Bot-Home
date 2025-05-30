@@ -1,12 +1,12 @@
 import React from 'react';
-import { Instagram, Twitter, Youtube } from 'lucide-react';
+import { Instagram,  LinkedinIcon, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Logo from "../../../../assets/images/logo.png";
 // import Logo from './Logo';
 
 interface FooterColumnProps {
   title: string;
-  links: string[];
+  links: { title: string; link: string }[];
 }
 
 const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
@@ -14,13 +14,15 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
     <div className="mb-8 md:mb-0">
       <h3 className="font-bold text-[var(--neutral-400)] mb-4">{title}</h3>
       <ul className="space-y-3">
-        {links.map((link, index) => (
+        {links.map(({title, link}, index) => (
           <li key={index}>
             <a 
-              href="#" 
+              key={index}
+              target="_blank"
+              href={link} 
               className="text-[var(--neutral-400)] hover:text-primary transition-colors duration-200"
             >
-              {link}
+              {title}
             </a>
           </li>
         ))}
@@ -33,19 +35,91 @@ const Footer: React.FC = () => {
   const footerData = [
     {
       title: 'Company',
-      links: ['Our Mission', 'Our Vision', 'Our Story', 'Meet Our Team'],
+      links: [
+        {
+          title: 'Our Mission',
+          link: "#"
+        },
+        {
+          title: 'Our Vision',
+          link: "#"
+        },
+        {
+          title: 'Our Story',
+          link: "#"
+        },
+        {
+          title: 'Meet Our Team',
+          link: "#"
+        },
+      ]
     },
     {
       title: 'Features',
-      links: ['Flexible Loan Options', 'Fast Approval Process', 'Multiple Country Support', 'Smart AI Assistance'],
+      links: [
+        {
+          title: 'AI Chat',
+          link: "#"
+        },
+        {
+          title: 'Auto User Data Collection',
+          link: "#"
+        },
+        {
+          title: 'Chat Interaction Analytics',
+          link: "#"
+        },
+        {
+          title: 'Smart Coupon System',
+          link: "#"
+        },
+      ]
+
+      
     },
-    {
-      title: 'Resources',
-      links: ['Blog', 'Case Studies', 'Whitepapers', 'eBooks'],
-    },
+  
     {
       title: 'Legal & Policies',
-      links: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Data Protection'],
+
+      links : [
+        {
+          title: 'Privacy Policy',
+          link: "#"
+        },
+        {
+          title: 'Terms of Service',
+          link: "#"
+        },
+        {
+          title: 'Cookie Policy',
+          link: "#"
+        },
+        {
+          title: 'Data Protection',
+          link: "#"
+        },
+      ]
+    },
+      {
+      title: 'Quick Links',
+      links : [
+        {
+          title: 'Blog',
+          link: "#"
+        },
+        {
+          title: 'Case Studies',
+          link: "#"
+        },
+        {
+          title: 'Whitepapers',
+          link: "#"
+        },
+        {
+          title: 'eBooks',
+          link: "#"
+        },
+      ]
     },
   ];
 
@@ -69,17 +143,17 @@ const Footer: React.FC = () => {
                 alt="Logo"
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
-              <span className="text-black font-semibold text-sm sm:text-lg">Quessia</span>
+              <span className="text-black font-semibold text-sm sm:text-lg">Squirrel</span>
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Instagram size={20} />
             </a>
-            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+            <a href="https://x.com/thesquirrel_org" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Twitter size={20} />
             </a>
-            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
-              <Youtube size={20} />
+            <a href="https://www.linkedin.com/company/the-squirrel-tech" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+              <LinkedinIcon size={20} />
             </a>
           </div>
         </div>

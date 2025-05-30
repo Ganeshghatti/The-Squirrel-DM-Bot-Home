@@ -10,31 +10,31 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Flow saved me hours every week by replying to comments instantly. My audience loves the quick replies!",
-    name: "Sofia M.",
-    title: "Marketing Manager",
+      "The Squirrel's Chatbot has significantly improved Aidcircle.in, offering instant, 24/7 support that has boosted user satisfaction and streamlined our platform's experience.",
+    name: "Aniket Thakur",
+    title: "Founder of Aidcircle",
     image: "https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg",
   },
   {
     id: 2,
     quote:
-      "I used to miss leads in comments. Now Flow captures them all automatically — it's like having a social media assistant!",
-    name: "Daniel K.",
-    title: "UI Designer",
+      "We've partnered with The Squirrel on several complex web development projects and every time, they've shown incredible reliability and innovation. Their AI chatbot development was especially impressive, helping us provide smarter solutions to our clients.",
+    name: "Shodhan Moolya",
+    title: "Founder of Torq Designs",
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 3,
     quote:
-      "From 10 DMs a day to 200+ — and I didn’t even touch my phone. Flow is a game changer.",
-    name: "Kimberly R.",
-    title: "Co-founder of NovaStack",
+      " Team understood our vision perfectly, delivering a beautiful, modern website. We appreciate your quick responses, easy collaboration, and dedication to meeting deadlines.",
+    name: "Quark Marketing",
+    title: " ",
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 4,
     quote:
-      "I finally feel in control of my engagement. Flow handles the replies, and I focus on growing my brand.",
+      "The Squirrel's chatbot handles technical queries accurately, freeing our team for bigger tasks. Their responsive support makes them an exceptional partner.",
     name: "Alex J.",
     title: "Product Manager",
     image: "/placeholder.svg?height=400&width=400",
@@ -43,8 +43,8 @@ const testimonials = [
     id: 5,
     quote:
       "Flow turned my comment section into a lead magnet. It's the smartest tool I've added to my marketing stack.",
-    name: "Priya T.",
-    title: "Content Strategist",
+    name: "RUSH",
+    title: " ",
     image: "/placeholder.svg?height=400&width=400",
   },
 ]
@@ -183,9 +183,9 @@ export default function UserAreSaying() {
                     transition: { duration: 0.3, ease: "easeOut" }
                   }}
                 >
-                  <Card className="h-[600px] border border-[#8F8F9226] rounded-3xl overflow-hidden p-4 hover:shadow-lg transition-shadow duration-300">
+                  <Card className="h-[198px] border border-[#8F8F9226] rounded-3xl overflow-hidden p-4 hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-0">
-                      <motion.div 
+                      {/* <motion.div 
                         className="aspect-square max-w-[413px] mx-auto mb-6 bg-gray-100 rounded-2xl flex items-center justify-center"
                         variants={imageVariants}
                         whileHover={{ 
@@ -200,9 +200,9 @@ export default function UserAreSaying() {
                           height={400}
                           className="object-cover"
                         />
-                      </motion.div>
+                      </motion.div> */}
                       <motion.p 
-                        className="text-gray-700 mb-4"
+                        className="text-gray-700 mb-4 line-clamp-4"
                         variants={textVariants}
                       >
                         {testimonial.quote}
@@ -247,7 +247,7 @@ export default function UserAreSaying() {
         </Carousel>
       </motion.div>
 
-      <motion.div 
+      {/* <motion.div 
         className="flex justify-center mt-12"
         variants={buttonVariants}
       >
@@ -260,7 +260,7 @@ export default function UserAreSaying() {
             Read All Testimonials
           </Button>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </motion.section>
   )
 }

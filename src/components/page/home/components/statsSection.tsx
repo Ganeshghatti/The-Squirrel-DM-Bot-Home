@@ -9,19 +9,19 @@ interface Stat {
 const StatsSection = () => {
   const stats: Stat[] = [
     {
-      number: "75,000+",
+      number: "50+",
       label: "Active users",
     },
     {
-      number: "2M+",
+      number: "999+",
       label: "AI-generated responses",
     },
     {
-      number: "100+",
+      number: "10",
       label: "Features built",
     },
     {
-      number: "99.9%",
+      number: "90%",
       label: "Uptime guarantee",
     },
   ];
