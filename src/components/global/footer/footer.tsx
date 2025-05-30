@@ -146,9 +146,9 @@ const Footer: React.FC = () => {
               <span className="text-black font-semibold text-sm sm:text-lg">Squirrel</span>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+            {/* <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Instagram size={20} />
-            </a>
+            </a> */}
             <a href="https://x.com/thesquirrel_org" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Twitter size={20} />
             </a>
