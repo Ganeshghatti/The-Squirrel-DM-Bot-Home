@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram,  LinkedinIcon, Twitter } from 'lucide-react';
+import {  LinkedinIcon, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Logo from "../../../../assets/images/logo.png";
 // import Logo from './Logo';
