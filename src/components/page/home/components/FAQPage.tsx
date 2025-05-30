@@ -184,6 +184,7 @@ const FAQPage: React.FC = () => {
 
   return (
     <motion.div
+      id="faq-page"
       className="min-h-screen flex flex-col  from-slate-50 to-stone-100 font-sans" // Added a subtle gradient background and base font
       initial="hidden"
       animate="visible"

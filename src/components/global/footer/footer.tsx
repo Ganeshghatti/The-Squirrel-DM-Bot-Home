@@ -104,21 +104,18 @@ const Footer: React.FC = () => {
       title: 'Quick Links',
       links : [
         {
-          title: 'Blog',
+          title: 'Home',
           link: "#"
         },
         {
-          title: 'Case Studies',
-          link: "#"
+          title: 'Features',
+          link: "#features"
         },
         {
-          title: 'Whitepapers',
-          link: "#"
+          title: 'FAQ',
+          link: "#faq-page"
         },
-        {
-          title: 'eBooks',
-          link: "#"
-        },
+        // 
       ]
     },
   ];
@@ -143,7 +140,7 @@ const Footer: React.FC = () => {
                 alt="Logo"
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
-              <span className="text-black font-semibold text-sm sm:text-lg">Squirrel</span>
+              <span className="text-black font-semibold text-lg sm:text-2xl">Squirrel</span>
           </div>
           <div className="flex space-x-6">
             {/* <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">

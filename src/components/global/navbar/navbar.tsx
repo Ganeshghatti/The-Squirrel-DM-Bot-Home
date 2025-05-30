@@ -17,16 +17,30 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+
 const Navbar = () => {
-  const [featuresOpen, setFeaturesOpen] = useState(false);
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
   return (
     <div className="absolute sm:fixed w-full top-1 z-50">
       <nav className="sm:w-fit sm:mx-auto px-3 sm:px-4 py-3 sm:py-3">
-        <div className="hidden sm:flex max-w-7xl mx-auto bg-[#0F1116] rounded-full py-3 sm:py-2 px-3 sm:px-4  items-center justify-between">
+        <div className="hidden sm:flex max-w-7xl mx-auto bg-[#010205] rounded-full py-3 sm:py-2 px-3 sm:px-3  items-center justify-between">
           <div className="flex items-center space-x-4 sm:space-x-8">
             <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
               <Image
@@ -46,94 +60,62 @@ const Navbar = () => {
               >
                 About
               </Link>
-
-              <div className="relative">
-                <button
-                  className="flex items-center text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
-                  onClick={() => setFeaturesOpen(!featuresOpen)}
-                >
-                  Features{" "}
-                  <ChevronDown className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
-                </button>
-                {featuresOpen && (
-                  <div className="absolute mt-1 sm:mt-2 w-40 sm:w-48 bg-white rounded-md shadow-lg py-1 z-50 text-sm">
-                    <span
-                    // href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
+              <Menubar>
+                <MenubarMenu>
+                  <MenubarTrigger>
+                    <Link
+                      href=""
+                      className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
                     >
+                      Features{" "}
+                    </Link>
+                  </MenubarTrigger>
+                  <MenubarContent>
+                    <MenubarItem>
                       AI Chat
-                    </span>
-                    <Link
-                    href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Auto User Data Collection
-                    </Link>
-                    <Link
-                      href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Chat Interaction Analytics
-                    </Link>
-                    <Link
-                    href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      AI Lead Classification
-                    </Link>
-                    <Link
-                    href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      User Segmentation
-                    </Link>
-                    <Link
-                    href=""
-                    className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Smart Coupon System
-                    </Link>
+                    </MenubarItem>
+                    <MenubarItem>
+                    Auto User Data Collection
+                    </MenubarItem>
+                    <MenubarItem>New Incognito Window</MenubarItem>
+                    <MenubarItem>Chat Interaction Analytics</MenubarItem>
+                    <MenubarItem>AI Lead Classification</MenubarItem>
+                    <MenubarItem>Smart Coupon System</MenubarItem>
+                    <MenubarItem>Auto Product Info Delivery</MenubarItem>
+                    
+                  </MenubarContent>
+                </MenubarMenu>
+                
+              </Menubar>
+                <Menubar>
+                <MenubarMenu>
+                  <MenubarTrigger>
                     <Link
                       href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
+                      className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
                     >
-                      Auto Product Info Delivery
+                      Solutions{" "}
                     </Link>
-                  </div>
-                )}
-              </div>
+                  </MenubarTrigger>
+                  <MenubarContent>
+                    <MenubarItem>
+                       AI DM Assistant
+                    </MenubarItem>
+                    <MenubarItem>
+                      Chat Analytics
+                    </MenubarItem>
+                    <MenubarItem>
+                       DM Automation Flows
+                    </MenubarItem>
+                    
+                    
+                  </MenubarContent>
+                </MenubarMenu>
+                
+              </Menubar>
+        
 
-              <div className="relative">
-                <button
-                  className="flex items-center text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
-                  onClick={() => setSolutionsOpen(!solutionsOpen)}
-                >
-                  Solutions{" "}
-                  <ChevronDown className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
-                </button>
-                {solutionsOpen && (
-                  <div className="absolute mt-1 sm:mt-2 w-40 sm:w-48 bg-white rounded-md shadow-lg py-1 z-50 text-sm">
-                    <Link
-                      href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Enterprise
-                    </Link>
-                    <Link
-                    href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Education
-                    </Link>
-                    <Link
-                      href=""
-                      className="block px-3 py-1.5 hover:bg-gray-100"
-                    >
-                      Developers
-                    </Link>
-                  </div>
-                )}
-              </div>
+            
 
               <Link
                 href=""
@@ -192,7 +174,7 @@ const Navbar = () => {
                 {/* About Link */}
                 <SheetClose asChild>
                   <Link
-                  href=""
+                    href=""
                     className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
                   >
                     About
@@ -256,7 +238,7 @@ const Navbar = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                        href=""
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           Smart Coupon System
@@ -264,7 +246,7 @@ const Navbar = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                        href=""
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
                           Auto Product Info Delivery
@@ -294,7 +276,7 @@ const Navbar = () => {
                           href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
-                          Enterprise
+                           AI DM Assistant
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
@@ -302,15 +284,15 @@ const Navbar = () => {
                           href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
-                          Education
+                          Lead Collection
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <Link
-                        href=""
+                          href=""
                           className="block text-gray-600 hover:text-black transition-colors py-2"
                         >
-                          Developers
+                          Chat Analytics
                         </Link>
                       </SheetClose>
                     </div>
@@ -320,7 +302,7 @@ const Navbar = () => {
                 {/* Partner Link */}
                 <SheetClose asChild>
                   <Link
-                  href=""
+                    href=""
                     className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
                   >
                     Contact

@@ -47,7 +47,7 @@ const TrustedCompanies = () => {
               src={company2}
               quality={100}
               alt="company"
-              width={150}
+              width={100}
               height={150}
             
             />
@@ -75,7 +75,7 @@ const TrustedCompanies = () => {
               src={company4}
               quality={100}
               alt="company"
-              width={150}
+              width={100}
               height={100}
             
             />
@@ -89,7 +89,7 @@ const TrustedCompanies = () => {
               src={company5}
               quality={100}
               alt="company"
-              width={150}
+              width={120}
               height={100}
             
             />
