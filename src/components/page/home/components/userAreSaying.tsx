@@ -1,8 +1,6 @@
 "use client"
-import Image from "next/image"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
 // Testimonial data
@@ -86,18 +84,18 @@ const cardVariants = {
   },
 }
 
-const imageVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.4,
-      delay: 0.2,
-      ease: "easeOut",
-    },
-  },
-}
+// const imageVariants = {
+//   hidden: { opacity: 0, scale: 0.8 },
+//   visible: {
+//     opacity: 1,
+//     scale: 1,
+//     transition: {
+//       duration: 0.4,
+//       delay: 0.2,
+//       ease: "easeOut",
+//     },
+//   },
+// }
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },

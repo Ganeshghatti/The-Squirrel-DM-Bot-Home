@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Circle, PlusCircle, CircleDot, CheckCircle, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import company1 from '../../../../../assets/images/company1.png'
 import company2 from '../../../../../assets/images/company2.png'
