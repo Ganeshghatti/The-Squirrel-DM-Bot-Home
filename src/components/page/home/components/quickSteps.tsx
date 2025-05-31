@@ -7,7 +7,7 @@ import QuickStepsImage from "../../../../../assets/images/QuickSteps.png";
 
 function QuickSteps() {
   return (
-    <section className="py-16 md:py-24">
+    <section id='QuickSteps' className="py-16 md:py-24">
       <div className="max-w-6xl lg:max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <motion.div

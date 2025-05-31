@@ -32,9 +32,9 @@ const testimonials = [
   {
     id: 4,
     quote:
-      "The Squirrel's chatbot handles technical queries accurately, freeing our team for bigger tasks. Their responsive support makes them an exceptional partner.",
-    name: "Alex J.",
-    title: "Product Manager",
+      "At Social Hardware, we’ve been using The Squirrel’s chatbot for a while now, and it’s been a great addition to our website. It’s been really helpful in handling those everyday customer questions.",
+    name: "Cameron Norris",
+    title: "Co founder",
     image: "/placeholder.svg?height=400&width=400",
   },
   // {

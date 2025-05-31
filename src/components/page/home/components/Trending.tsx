@@ -8,7 +8,7 @@ import trendingImage from "../../../../../assets/images/trending.png";
 
 function Trending() {
   return (
-    <section className="py-16">
+    <section id="Triggers" className="py-16">
       <div className=" max-w-6xl lg:max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row h-full items-center justify-center gap-5">
           <motion.div

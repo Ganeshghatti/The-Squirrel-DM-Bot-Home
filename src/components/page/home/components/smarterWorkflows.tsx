@@ -4,7 +4,7 @@ import Trending from "./Trending";
 
 function SmarterWorkflows() {
   return (
-    <section>
+    <section id="features">
       <header className="text-center py-10 max-w-4xl mx-auto px-4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900">
           Complete Tools for

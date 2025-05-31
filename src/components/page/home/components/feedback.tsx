@@ -9,7 +9,7 @@ import feedbackImage from "../../../../../assets/images/feedback.png";
 
 function Feedback() {
   return (
-    <section className="">
+    <section id="AI-Chat" className="">
       <div className="max-w-6xl lg:max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-5">
           <motion.div

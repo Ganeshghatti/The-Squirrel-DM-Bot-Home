@@ -27,7 +27,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section id="features" className="md:py-20 px-4">
+    <section id="about" className="md:py-20 px-4">
       <div className="md:max-w-4xl lg:max-w-7xl mx-auto grid grid-cols-1  lg:grid-cols-2 gap-16">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

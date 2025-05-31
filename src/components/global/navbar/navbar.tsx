@@ -27,7 +27,6 @@ import {
 
 const Navbar = () => {
   const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false);
-  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
   return (
     <div className="absolute sm:fixed w-full top-1 z-50">
@@ -38,7 +37,7 @@ const Navbar = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                className="h-8 w-8 sm:h-10 sm:w-10"
+                className="h-8 w-10 sm:h-10 sm:w-12"
               />
               <span className="hidden sm:block text-white font-semibold text-sm sm:text-lg">
                 The Squirrel
@@ -47,7 +46,7 @@ const Navbar = () => {
 
             <div className="flex items-center space-x-4 sm:space-x-6 text-sm sm:text-base">
               <Link
-                href=""
+                href="#about"
                 className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
               >
                 About
@@ -55,57 +54,19 @@ const Navbar = () => {
               <Menubar>
                 <MenubarMenu>
                   <MenubarTrigger>
-                    <span
-                      className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
-                    >
+                    <span className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base">
                       Features{" "}
                     </span>
                   </MenubarTrigger>
                   <MenubarContent>
-                    <MenubarItem>
-                      AI Chat
-                    </MenubarItem>
-                    <MenubarItem>
-                    Auto User Data Collection
-                    </MenubarItem>
-                    <MenubarItem>New Incognito Window</MenubarItem>
-                    <MenubarItem>Chat Interaction Analytics</MenubarItem>
-                    <MenubarItem>AI Lead Classification</MenubarItem>
-                    <MenubarItem>Smart Coupon System</MenubarItem>
-                    <MenubarItem>Auto Product Info Delivery</MenubarItem>
-                    
+                    <MenubarItem><a href="#AI-Chat">AI Chat</a></MenubarItem>
+                    <MenubarItem><a href="#Triggers">Smart DM Triggers</a></MenubarItem>
+                    <MenubarItem><a href="#QuickSteps">Quick Steps</a></MenubarItem>
+                  
                   </MenubarContent>
                 </MenubarMenu>
-                
               </Menubar>
-                <Menubar>
-                <MenubarMenu>
-                  <MenubarTrigger>
-                    <span
-                      className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
-                    >
-                      Solutions{" "}
-                    </span>
-                  </MenubarTrigger>
-                  <MenubarContent>
-                    <MenubarItem>
-                       AI DM Assistant
-                    </MenubarItem>
-                    <MenubarItem>
-                      Chat Analytics
-                    </MenubarItem>
-                    <MenubarItem>
-                       DM Automation Flows
-                    </MenubarItem>
-                    
-                    
-                  </MenubarContent>
-                </MenubarMenu>
-                
-              </Menubar>
-        
-
-            
+              
 
               <Link
                 href="https://www.thesquirrel.tech/#contact"
@@ -133,186 +94,123 @@ const Navbar = () => {
             </span>
           </Link>
 
-          <Sheet>
-            <SheetTrigger asChild>
-              <button className="text-black hover:text-gray-600 transition-colors">
-                <Menu className="h-8 w-8" />
+        <Sheet>
+  <SheetTrigger asChild>
+    <button className="text-black hover:text-gray-600 transition-colors">
+      <Menu className="h-8 w-8" />
+    </button>
+  </SheetTrigger>
+  <SheetContent className="w-[300px] sm:w-[400px]">
+    <SheetHeader className="text-left">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+          <Image
+            src={Logo}
+            alt="Logo"
+            className="h-8 w-8 sm:h-10 sm:w-10"
+          />
+          <span className="text-black font-semibold text-lg">
+            The Squirrel
+          </span>
+        </div>
+      </div>
+    </SheetHeader>
+
+    <div className="flex flex-col space-y-4 mt-8">
+      {/* About Link */}
+      <SheetClose asChild>
+        <button
+          onClick={() =>
+            setTimeout(() => {
+              document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+            }, 100)
+          }
+          className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2 text-left"
+        >
+          About
+        </button>
+      </SheetClose>
+
+      {/* Features Dropdown */}
+      <div>
+        <button
+          className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
+          onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
+        >
+          Features
+          <ChevronDown
+            className={`ml-1 h-5 w-5 transform transition-transform ${
+              mobileFeaturesOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+        {mobileFeaturesOpen && (
+          <div className="ml-4 mt-2 space-y-2">
+            <SheetClose asChild>
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    document.getElementById("AI-Chat")?.scrollIntoView({ behavior: "smooth" });
+                  }, 300)
+                }
+                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+              >
+                AI Chat
               </button>
-            </SheetTrigger>
-            <SheetContent className="w-[300px] sm:w-[400px]">
-              <SheetHeader className="text-left">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <Image
-                      src={Logo}
-                      alt="Logo"
-                      className="h-8 w-8 sm:h-10 sm:w-10"
-                    />
-                    <span className="text-black font-semibold text-lg">
-                      The Squirrel
-                    </span>
-                  </div>
-                  {/* <SheetClose asChild>
-                    <button className="text-gray-500 hover:text-gray-700">
-                      <X className="h-6 w-6" />
-                    </button>
-                  </SheetClose> */}
-                </div>
-              </SheetHeader>
+            </SheetClose>
+            <SheetClose asChild>
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    document.getElementById("Triggers")?.scrollIntoView({ behavior: "smooth" });
+                  }, 300)
+                }
+                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+              >
+                Smart DM Triggers
+              </button>
+            </SheetClose>
+            <SheetClose asChild>
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    document.getElementById("QuickSteps")?.scrollIntoView({ behavior: "smooth" });
+                  }, 300)
+                }
+                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+              >
+                Quick Steps
+              </button>
+            </SheetClose>
+          </div>
+        )}
+      </div>
 
-              <div className="flex flex-col space-y-4 mt-8">
-                {/* About Link */}
-                <SheetClose asChild>
-                  <Link
-                    href=""
-                    className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-                  >
-                    About
-                  </Link>
-                </SheetClose>
+      {/* Contact Link (external) */}
+      <SheetClose asChild>
+        <Link
+          href="https://www.thesquirrel.tech/#contact"
+          className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
+        >
+          Contact
+        </Link>
+      </SheetClose>
 
-                {/* Features Dropdown */}
-                <div>
-                  <button
-                    className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-                    onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
-                  >
-                    Features
-                    <ChevronDown
-                      className={`ml-1 h-5 w-5 transform transition-transform ${
-                        mobileFeaturesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  {mobileFeaturesOpen && (
-                    <div className="ml-4 mt-2 space-y-2">
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          AI Chat
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Auto User Data Collection
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Chat Interaction Analytics
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          AI Lead Classification
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          User Segmentation
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Smart Coupon System
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Auto Product Info Delivery
-                        </Link>
-                      </SheetClose>
-                    </div>
-                  )}
-                </div>
+      {/* Register Button */}
+      <div className="pt-4">
+        <SheetClose asChild>
+          <Link
+            href="https://dashboard.thesquirrel.tech"
+            className="block w-full bg-black text-white font-medium rounded-full px-6 py-3 text-center hover:bg-gray-800 transition-colors"
+          >
+            Register Now
+          </Link>
+        </SheetClose>
+      </div>
+    </div>
+  </SheetContent>
+</Sheet>
 
-                {/* Solutions Dropdown */}
-                <div>
-                  <button
-                    className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-                    onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
-                  >
-                    Solutions
-                    <ChevronDown
-                      className={`ml-1 h-5 w-5 transform transition-transform ${
-                        mobileSolutionsOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  {mobileSolutionsOpen && (
-                    <div className="ml-4 mt-2 space-y-2">
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                           AI DM Assistant
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Lead Collection
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          href=""
-                          className="block text-gray-600 hover:text-black transition-colors py-2"
-                        >
-                          Chat Analytics
-                        </Link>
-                      </SheetClose>
-                    </div>
-                  )}
-                </div>
-
-                {/* Partner Link */}
-                <SheetClose asChild>
-                  <Link
-                    href="https://www.thesquirrel.tech/#contact"
-                    className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-                  >
-                    Contact
-                  </Link>
-                </SheetClose>
-
-                {/* Register Button */}
-                <div className="pt-4">
-                  <SheetClose asChild>
-                    <Link
-                      href="https://dashboard.thesquirrel.tech"
-                      className="block w-full bg-black text-white font-medium rounded-full px-6 py-3 text-center hover:bg-gray-800 transition-colors"
-                    >
-                      Register Now
-                    </Link>
-                  </SheetClose>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
         </div>
       </nav>
     </div>
