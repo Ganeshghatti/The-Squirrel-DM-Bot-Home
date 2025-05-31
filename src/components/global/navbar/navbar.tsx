@@ -41,7 +41,7 @@ const Navbar = () => {
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
               <span className="hidden sm:block text-white font-semibold text-sm sm:text-lg">
-                Squirrel
+                The Squirrel
               </span>
             </Link>
 
@@ -55,12 +55,11 @@ const Navbar = () => {
               <Menubar>
                 <MenubarMenu>
                   <MenubarTrigger>
-                    <Link
-                      href=""
+                    <span
                       className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
                     >
                       Features{" "}
-                    </Link>
+                    </span>
                   </MenubarTrigger>
                   <MenubarContent>
                     <MenubarItem>
@@ -82,12 +81,11 @@ const Navbar = () => {
                 <Menubar>
                 <MenubarMenu>
                   <MenubarTrigger>
-                    <Link
-                      href=""
+                    <span
                       className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
                     >
                       Solutions{" "}
-                    </Link>
+                    </span>
                   </MenubarTrigger>
                   <MenubarContent>
                     <MenubarItem>
@@ -110,7 +108,7 @@ const Navbar = () => {
             
 
               <Link
-                href=""
+                href="https://www.thesquirrel.tech/#contact"
                 className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
               >
                 Contact
@@ -131,7 +129,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
             <Image src={Logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10" />
             <span className="text-black font-semibold text-sm sm:text-lg">
-              Squirrel
+              The Squirrel
             </span>
           </Link>
 
@@ -151,7 +149,7 @@ const Navbar = () => {
                       className="h-8 w-8 sm:h-10 sm:w-10"
                     />
                     <span className="text-black font-semibold text-lg">
-                      Squirrel
+                      The Squirrel
                     </span>
                   </div>
                   {/* <SheetClose asChild>
@@ -294,7 +292,7 @@ const Navbar = () => {
                 {/* Partner Link */}
                 <SheetClose asChild>
                   <Link
-                    href=""
+                    href="https://www.thesquirrel.tech/#contact"
                     className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
                   >
                     Contact

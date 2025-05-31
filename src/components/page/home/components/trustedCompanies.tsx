@@ -13,7 +13,7 @@ const TrustedCompanies = () => {
   return (
     <section className="py-16 px-4 ">
       <motion.div 
-        className="max-w-5xl mx-auto text-center"
+        className="max-w-6xl mx-auto text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
@@ -23,9 +23,9 @@ const TrustedCompanies = () => {
           Trusted by 1,289+ leading companies
         </h2> */}
         
-        <div className="flex flex-wrap justify-center gap-12">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-20">
           <motion.div 
-            className="flex items-center  "
+            className="flex items-center w-16 md:w-28  "
             whileHover={{ scale: 1.05 }}
           >
             <Image 
@@ -40,7 +40,7 @@ const TrustedCompanies = () => {
           </motion.div>
           
           <motion.div 
-            className="flex items-center space-x-2 logo-drop-shadow"
+            className="flex items-center space-x-2 logo-drop-shadow w-14 md:w-20 "
             whileHover={{ scale: 1.05 }}
           >
             <Image 
@@ -54,7 +54,7 @@ const TrustedCompanies = () => {
           </motion.div>
           
           <motion.div 
-            className="flex items-center space-x-2  logo-drop-shadow"
+            className="flex items-center space-x-2  logo-drop-shadow w-16 md:w-28"
             whileHover={{ scale: 1.05 }}
           >
             <Image 
@@ -68,7 +68,7 @@ const TrustedCompanies = () => {
           </motion.div>
           
           <motion.div 
-            className="flex items-center  logo-drop-shadow "
+            className="flex items-center  logo-drop-shadow w-16 md:w-28"
             whileHover={{ scale: 1.05 }}
           >
             <Image 
@@ -82,7 +82,7 @@ const TrustedCompanies = () => {
           </motion.div>
           
           <motion.div 
-            className="flex items-center space-x-2 text-gray-400"
+            className="flex items-center space-x-2 text-gray-400 w-16 md:w-28"
             whileHover={{ scale: 1.05 }}
           >
             <Image 

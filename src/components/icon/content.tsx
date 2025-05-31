@@ -8,7 +8,7 @@ interface ContentProps {
 }
 
 function Content({
-  width = 25,
+  width = 32,
   height = 25,
   viewBox = "0 0 25 25",
   fill = "white",

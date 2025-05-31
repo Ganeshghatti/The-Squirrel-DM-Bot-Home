@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+
 import { motion } from "framer-motion"
 
 // Testimonial data
@@ -21,14 +21,14 @@ const testimonials = [
     title: "Founder of Torq Designs",
     image: "/placeholder.svg?height=400&width=400",
   },
-  {
-    id: 3,
-    quote:
-      " Team understood our vision perfectly, delivering a beautiful, modern website. We appreciate your quick responses, easy collaboration, and dedication to meeting deadlines.",
-    name: "Quark Marketing",
-    title: " ",
-    image: "/placeholder.svg?height=400&width=400",
-  },
+  // {
+  //   id: 3,
+  //   quote:
+  //     " Team understood our vision perfectly, delivering a beautiful, modern website. We appreciate your quick responses, easy collaboration, and dedication to meeting deadlines.",
+  //   name: "Quark Marketing",
+  //   title: " ",
+  //   image: "/placeholder.svg?height=400&width=400",
+  // },
   {
     id: 4,
     quote:
@@ -37,14 +37,14 @@ const testimonials = [
     title: "Product Manager",
     image: "/placeholder.svg?height=400&width=400",
   },
-  {
-    id: 5,
-    quote:
-      "Flow turned my comment section into a lead magnet. It's the smartest tool I've added to my marketing stack.",
-    name: "RUSH",
-    title: " ",
-    image: "/placeholder.svg?height=400&width=400",
-  },
+  // {
+  //   id: 5,
+  //   quote:
+  //     "Flow turned my comment section into a lead magnet. It's the smartest tool I've added to my marketing stack.",
+  //   name: "RUSH",
+  //   title: " ",
+  //   image: "/placeholder.svg?height=400&width=400",
+  // },
 ]
 
 // Animation variants
@@ -110,31 +110,31 @@ const textVariants = {
   },
 }
 
-const buttonVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: 0.4,
-      ease: "easeOut",
-    },
-  },
-  hover: {
-    scale: 1.05,
-    transition: {
-      duration: 0.2,
-      ease: "easeInOut",
-    },
-  },
-  tap: {
-    scale: 0.95,
-    transition: {
-      duration: 0.1,
-    },
-  },
-}
+// const buttonVariants = {
+//   hidden: { opacity: 0, y: 20 },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       duration: 0.5,
+//       delay: 0.4,
+//       ease: "easeOut",
+//     },
+//   },
+//   hover: {
+//     scale: 1.05,
+//     transition: {
+//       duration: 0.2,
+//       ease: "easeInOut",
+//     },
+//   },
+//   tap: {
+//     scale: 0.95,
+//     transition: {
+//       duration: 0.1,
+//     },
+//   },
+// }
 
 export default function UserAreSaying() {
   return (
@@ -166,10 +166,10 @@ export default function UserAreSaying() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Carousel className="w-full">
-          <CarouselContent className="-ml-2 md:-ml-4 py-5 px-1">
+        <div  className="w-full">
+          <div className="flex flex-wrap -ml-2 md:-ml-4 py-5 px-1">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={testimonial.id} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+              <div key={testimonial.id} className="mt-4 pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <motion.div
                   variants={cardVariants}
                   initial="hidden"
@@ -177,7 +177,7 @@ export default function UserAreSaying() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ 
-                    y: -10,
+                    y: -5,
                     transition: { duration: 0.3, ease: "easeOut" }
                   }}
                 >
@@ -222,10 +222,10 @@ export default function UserAreSaying() {
                     </CardFooter>
                   </Card>
                 </motion.div>
-              </CarouselItem>
+              </div>
             ))}
-          </CarouselContent>
-          <motion.div 
+          </div>
+          {/* <motion.div 
             className="flex items-center justify-center gap-2 mt-8"
             variants={buttonVariants}
           >
@@ -241,8 +241,8 @@ export default function UserAreSaying() {
             >
               <CarouselNext className="relative static" />
             </motion.div>
-          </motion.div>
-        </Carousel>
+          </motion.div> */}
+        </div>
       </motion.div>
 
       {/* <motion.div 

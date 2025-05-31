@@ -18,7 +18,7 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
           <li key={index}>
             <a 
               key={index}
-              target="_blank"
+              // target="_blank"
               href={link} 
               className="text-[var(--neutral-400)] hover:text-primary transition-colors duration-200"
             >
@@ -140,16 +140,16 @@ const Footer: React.FC = () => {
                 alt="Logo"
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
-              <span className="text-black font-semibold text-lg sm:text-2xl">Squirrel</span>
+              <span className="text-black font-semibold text-lg sm:text-2xl">The Squirrel</span>
           </div>
           <div className="flex space-x-6">
             {/* <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Instagram size={20} />
             </a> */}
-            <a href="https://x.com/thesquirrel_org" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+            <a href="https://x.com/thesquirrel_org"  target="_blank"className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <Twitter size={20} />
             </a>
-            <a href="https://www.linkedin.com/company/the-squirrel-tech" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
+            <a   href="https://www.linkedin.com/company/the-squirrel-tech" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-600 transition-colors duration-200">
               <LinkedinIcon size={20} />
             </a>
           </div>

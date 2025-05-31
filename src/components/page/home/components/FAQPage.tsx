@@ -170,11 +170,7 @@ const FAQPage: React.FC = () => {
       content:
         "Chat Interaction Analytics helps you understand how users are engaging with the bot. It tracks metrics like the number of users initiating conversations, total messages exchanged, average session length, product link clicks, and drop-off points. This data helps identify popular products, conversation bottlenecks, and guides future campaign strategies.",
     },
-    {
-      title: "How is user information stored?",
-      content:
-        "The project document mentions that user data (full name, email, phone number) is \"stored securely for future follow-up or analysis.\"",
-    },
+
     {
       title: "Can the bot handle incomplete information from users?",
       content:

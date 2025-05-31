@@ -13,7 +13,7 @@ const ProductShowcase = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="relative ">
+        <div className="relative shadow-2xl bg-gray-100 ">
           <Image
             src={productShowcaseImage}
             alt="Product Showcase"
@@ -22,7 +22,7 @@ const ProductShowcase = () => {
             placeholder="blur"
             width={1200}
             sizes="100%"
-            className="object-cover  w-full"
+            className="object-cover  w-full  "
             
           />
         </div>
