@@ -110,6 +110,7 @@
   }
   *{
     box-sizing: border-box;
+    scroll-behavior: smooth
   }
   body {
     @apply bg-background text-foreground font-sans min-h-dvh h-full;
