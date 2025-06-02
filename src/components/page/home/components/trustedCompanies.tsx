@@ -2,11 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import company1 from '../../../../../assets/images/company1.png'
-import company2 from '../../../../../assets/images/company2.png'
-import company3 from '../../../../../assets/images/company3.png'
-import company4 from '../../../../../assets/images/company4.png'
-import company5 from '../../../../../assets/images/company5.png'
 
 
 const TrustedCompanies = () => {
@@ -30,7 +25,7 @@ const TrustedCompanies = () => {
           >
             <Image 
             className="stroke stroke-black  "
-              src={company1}
+              src={"/assets/images/company1.png"}
               alt="company"
               quality={100}
               width={150}
@@ -44,7 +39,7 @@ const TrustedCompanies = () => {
             whileHover={{ scale: 1.05 }}
           >
             <Image 
-              src={company2}
+              src={'/assets/images/company2.png'}
               quality={100}
               alt="company"
               width={100}
@@ -58,7 +53,7 @@ const TrustedCompanies = () => {
             whileHover={{ scale: 1.05 }}
           >
             <Image 
-              src={company3}
+              src={"/assets/images/company3.png"}
               quality={100}
               alt="company"
               width={150}
@@ -72,7 +67,7 @@ const TrustedCompanies = () => {
             whileHover={{ scale: 1.05 }}
           >
             <Image 
-              src={company4}
+              src={"/assets/images/company4.png"}
               quality={100}
               alt="company"
               width={100}
@@ -86,7 +81,7 @@ const TrustedCompanies = () => {
             whileHover={{ scale: 1.05 }}
           >
             <Image 
-              src={company5}
+              src={"/assets/images/company5.png"}
               quality={100}
               alt="company"
               width={120}

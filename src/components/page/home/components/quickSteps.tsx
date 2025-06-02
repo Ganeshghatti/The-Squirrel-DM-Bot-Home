@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import QuickStepsImage from "../../../../../assets/images/QuickSteps.png";
 
 function QuickSteps() {
   return (
@@ -19,11 +18,11 @@ function QuickSteps() {
           >
             <div className="relative ">
               <Image
-                src={QuickStepsImage}
+                src={"/assets/images/QuickSteps.png"}
                 alt="Product Showcase"
                 quality={100}
                 // fill
-                placeholder="blur"
+                // placeholder="blur"
                 width={630}
                 height={430}
                 sizes="100%"

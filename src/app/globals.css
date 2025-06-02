@@ -16,7 +16,7 @@
 
     background: linear-gradient(
       180deg,
-      rgba(127, 120, 255, 0.15) 0%,
+      #7f78ff26 0%,
       /* rgba(218, 216, 255, 0.15) 100% */
         rgba(255, 255, 255, 0.15) 100%
     );
@@ -30,10 +30,10 @@
   }
 
   .logo-drop-shadow {
-    filter: drop-shadow(0 4px 3px rgb(0, 0, 0)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    filter: drop-shadow(0 1px 1px rgb(0, 0, 0)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0));
   }
 
-
+ 
   
 }
 

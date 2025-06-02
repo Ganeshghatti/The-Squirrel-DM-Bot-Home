@@ -11,12 +11,12 @@ const testimonials = [
       "The Squirrel's Chatbot has significantly improved Aidcircle.in, offering instant, 24/7 support that has boosted user satisfaction and streamlined our platform's experience.",
     name: "Aniket Thakur",
     title: "Founder of Aidcircle",
-    image: "https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg",
+    image: "/assets/images/",
   },
   {
     id: 2,
     quote:
-      "We've partnered with The Squirrel on several complex web development projects and every time, they've shown incredible reliability and innovation. Their AI chatbot development was especially impressive, helping us provide smarter solutions to our clients.",
+      "We've partnered with The Squirrel on several complex projects and every time, they've shown incredible reliability and innovation. Their AI chatbot development was especially impressive, helping us provide smarter solutions to our clients.",
     name: "Shodhan Moolya",
     title: "Founder of Torq Designs",
     image: "/placeholder.svg?height=400&width=400",

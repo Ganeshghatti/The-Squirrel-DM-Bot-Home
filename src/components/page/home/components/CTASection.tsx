@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import productShowcaseImage from "../../../../../assets/images/productShowcase.png";
 import Link from 'next/link';
 
 
@@ -23,12 +22,13 @@ const CTASection: React.FC = () => {
 
         <div className='hidden overflow-hidden lg:block h-[500px] w-[600px] bg-[#93b2ff] absolute   top-10 -right-10 -rotate-3 rounded-xl p-1'>
             <Image
-            src={productShowcaseImage}
+            src={"/assets/images/productShowcase.png"}
             alt="Product Showcase"
             quality={100}
             // fill
-            placeholder="blur"
+            // placeholder="blur"
             width={1200}
+            height={1200}
             sizes="100%"
             className="object-cover  w-full rounded-[8px] "
             

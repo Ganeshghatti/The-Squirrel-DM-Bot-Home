@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import trendingImage from "../../../../../assets/images/trending.png";
 
 function Trending() {
   return (
@@ -27,12 +25,12 @@ function Trending() {
               <p className="text-[var(--neutral-400)] mb-6">
                 Convert comments into conversations. Our AI listens for specific keywords in your post comments and instantly sends personalized DMs. Perfect for leads, demos, and promotions—fully automated.
               </p>
-              <Link
-                href="/learn-more"
+              {/* <Link
+                href="https://thesquirrel.tech"
                 className="bg-primary hover:bg-primary/80 text-white px-5 py-2 md:px-7 md:py-3 rounded-full font-medium inline-block transition-colors"
               >
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
           <motion.div
@@ -45,11 +43,11 @@ function Trending() {
             <div className="bg-gray-100 p-8 rounded-3xl h-full flex items-center justify-center">
               <div className="relative ">
                 <Image
-                  src={trendingImage}
+                  src={"/assets/images/trending.png"}
                   alt="Product Showcase"
                   quality={100}
                   // fill
-                  placeholder="blur"
+                  // placeholder="blur"
                   width={450}
                   height={294       }
                   sizes="100%"

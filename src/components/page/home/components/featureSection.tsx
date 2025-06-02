@@ -4,7 +4,6 @@ import Automation from "@/components/icon/automation";
 import Content from "@/components/icon/content";
 import RealTime from "@/components/icon/realTime";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const FeatureSection = () => {
   const features = [
@@ -41,12 +40,12 @@ const FeatureSection = () => {
           <p className="text-[var(--neutral-400)] mb-6 md:mb-8 text-base md:text-lg">
           Supercharge your DMs with automation, lead capture, and smart insights — built for creators, coaches, and small businesses.
           </p>
-          <Link
-            href="/learn-more"
+          {/* <Link
+            href="https://thesquirrel.tech"
             className="bg-primary hover:bg-primary/80 text-white px-5 py-2 md:px-7 md:py-3 rounded-full font-medium inline-block transition-colors"
           >
             Learn More
-          </Link>
+          </Link> */}
         </motion.div>
 
         <div className="space-y-5 md:space-y-8">

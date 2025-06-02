@@ -44,7 +44,7 @@ function HeroSection() {
           <Link href="https://dashboard.thesquirrel.tech" className="bg-primary hover:bg-primary/80 text-white px-8 py-3 rounded-full font-medium transition-colors">
             Get Started
           </Link>
-          <Link href="/how-it-works" className="bg-white border border-primary text-primary rounded-full font-medium hover:primary/80 px-8 py-3 transition-colors">
+          <Link href="https://thesquirrel.tech" className="bg-white border border-primary text-primary rounded-full font-medium hover:primary/80 px-8 py-3 transition-colors">
             How it Works
           </Link>
         </motion.div>

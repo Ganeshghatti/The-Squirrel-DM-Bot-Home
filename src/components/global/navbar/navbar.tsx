@@ -3,7 +3,6 @@
 import { ChevronDown, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../../../../assets/images/logo.png";
 
 import {
   Sheet,
@@ -31,11 +30,14 @@ const Navbar = () => {
   return (
     <div className="absolute sm:fixed w-full top-1 z-50">
       <nav className="sm:w-fit sm:mx-auto px-3 sm:px-4 py-3 sm:py-3">
-        <div className="hidden sm:flex max-w-7xl mx-auto bg-[#010205] rounded-full py-3 sm:py-2 px-3 sm:px-3  items-center justify-between">
+        <div className="hidden sm:flex max-w-7xl border-2  border-[#7f78ff26] mx-auto bg-[#010205] rounded-full py-3 sm:py-2 px-3 sm:px-3  items-center justify-between">
           <div className="flex items-center space-x-4 sm:space-x-8">
             <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
               <Image
-                src={Logo}
+                src={"/assets/images/logo.png"}
+                quality={100}
+                width={48}
+                height={40}
                 alt="Logo"
                 className="h-8 w-10 sm:h-10 sm:w-12"
               />
@@ -88,7 +90,9 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center sm:hidden p-3">
           <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
-            <Image src={Logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10" />
+            <Image src={"/assets/images/logo.png"} quality={100}
+                width={48}
+                height={40} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10" />
             <span className="text-black font-semibold text-sm sm:text-lg">
               The Squirrel
             </span>
@@ -105,7 +109,10 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Image
-            src={Logo}
+            src={"/assets/images/logo.png"}
+            quality={100}
+                width={48}
+                height={40}
             alt="Logo"
             className="h-8 w-8 sm:h-10 sm:w-10"
           />

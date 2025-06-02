@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import feedbackImage from "../../../../../assets/images/feedback.png";
 
 
 function Feedback() {
@@ -22,11 +20,11 @@ function Feedback() {
             <div className="bg-gray-100 p-8 rounded-3xl h-full flex items-center justify-center">
               <div className="relative ">
                 <Image
-                  src={feedbackImage}
+                  src={"/assets/images/feedback.png"}
                   alt="Product Showcase"
                   quality={100}
                   // fill
-                  placeholder="blur"
+                  // placeholder="blur"
                   width={400}
                   height={496     }
                   sizes="100%"
@@ -53,12 +51,12 @@ function Feedback() {
                 Let our AI take over your Instagram DMs — automatically collect names, emails, and phone numbers, and guide your audience toward your services or products.
 No more missed messages, no more manual replies.
               </p>
-              <Link
-                href="/learn-more"
+              {/* <Link
+                href="https://thesquirrel.tech"
                 className="bg-primary hover:bg-primary/80 text-white px-5 py-2 md:px-7 md:py-3 rounded-full font-medium inline-block transition-colors"
               >
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         </div>
