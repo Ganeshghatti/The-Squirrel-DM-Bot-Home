@@ -59,7 +59,7 @@ const containerVariants = {
   },
 }
 
-const headerVariants = {
+export const headerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -97,7 +97,7 @@ const cardVariants = {
 //   },
 // }
 
-const textVariants = {
+export const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,

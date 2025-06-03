@@ -1,4 +1,5 @@
-import { LinkedinIcon, Twitter } from "lucide-react";
+"use client";
+import { LinkedinIcon, Mail, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -113,12 +114,42 @@ const Footer: React.FC = () => {
               Automate and enhance client communication via Instagram DMs using
               AI
             </p>
+            <div>
+                <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
+              <Mail className="h-4 w-4" />
+              <a
+                href="https://formsubmit.co/el/info@thesquirrel.tech"
+                target="_blank"
+                className="text-sm sm:text-base hover:underline"
+              >
+                info@thesquirrel.tech
+              </a>
+            </p>
+            <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
+              <Phone className="h-4 w-4" />
+              <a
+                href="tel:+91 94496 10077"
+                className="text-sm sm:text-base hover:underline"
+              >
+                +91 94496 10077
+              </a>
+            </p>
+
+            </div>
+          
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col min-[440px]:flex-row justify-between items-center gap-3  flex-wrap">
           <div className=" sm:mb-0 flex gap-1 min-[440px]:gap-2 items-center justify-center">
-            <Image src={"/assets/images/logo.png"} quality={100} height={40} width={48} alt="Logo" className="h-6 w-8 sm:h-8 sm:w-10" />
+            <Image
+              src={"/assets/images/logo.png"}
+              quality={100}
+              height={40}
+              width={48}
+              alt="Logo"
+              className="h-6 w-8 sm:h-8 sm:w-10"
+            />
             <span className="text-black font-semibold text-base sm:text-xl">
               The Squirrel
             </span>

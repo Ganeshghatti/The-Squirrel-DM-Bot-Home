@@ -10,6 +10,7 @@ import StatsSection from "./components/statsSection";
 import UserAreSaying from "./components/userAreSaying";
 import FAQPage from "./components/FAQPage";
 import CTASection from "./components/CTASection";
+import Contact from "./components/Contact";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <QuickSteps/>
       <UserAreSaying/>
       <FAQPage/>
+      <Contact/>
       <CTASection/>
     </main>
   );

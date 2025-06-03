@@ -71,7 +71,7 @@ const Navbar = () => {
               
 
               <Link
-                href="https://www.thesquirrel.tech/#contact"
+                href="#contact"
                 className="text-white hover:text-gray-300 transition-colors text-sm sm:text-sm md:text-base"
               >
                 Contact
@@ -196,7 +196,7 @@ const Navbar = () => {
       {/* Contact Link (external) */}
       <SheetClose asChild>
         <Link
-          href="https://www.thesquirrel.tech/#contact"
+          href="#contact"
           className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
         >
           Contact
