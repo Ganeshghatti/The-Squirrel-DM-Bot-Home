@@ -61,14 +61,18 @@ const Navbar = () => {
                     </span>
                   </MenubarTrigger>
                   <MenubarContent>
-                    <MenubarItem><a href="#AI-Chat">AI Chat</a></MenubarItem>
-                    <MenubarItem><a href="#Triggers">Smart DM Triggers</a></MenubarItem>
-                    <MenubarItem><a href="#QuickSteps">Quick Steps</a></MenubarItem>
-                  
+                    <MenubarItem>
+                      <a href="#AI-Chat">AI Chat</a>
+                    </MenubarItem>
+                    <MenubarItem>
+                      <a href="#Triggers">Smart DM Triggers</a>
+                    </MenubarItem>
+                    <MenubarItem>
+                      <a href="#QuickSteps">Quick Steps</a>
+                    </MenubarItem>
                   </MenubarContent>
                 </MenubarMenu>
               </Menubar>
-              
 
               <Link
                 href="#contact"
@@ -90,134 +94,146 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center sm:hidden p-3">
           <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
-            <Image src={"/assets/images/logo.png"} quality={100}
-                width={48}
-                height={40} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10" />
+            <Image
+              src={"/assets/images/logo.png"}
+              quality={100}
+              width={48}
+              height={40}
+              alt="Logo"
+              className="h-8 w-8 sm:h-10 sm:w-10"
+            />
             <span className="text-black font-semibold text-sm sm:text-lg">
               The Squirrel
             </span>
           </Link>
 
-        <Sheet>
-  <SheetTrigger asChild>
-    <button className="text-black hover:text-gray-600 transition-colors">
-      <Menu className="h-8 w-8" />
-    </button>
-  </SheetTrigger>
-  <SheetContent className="w-[300px] sm:w-[400px]">
-    <SheetHeader className="text-left">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <Image
-            src={"/assets/images/logo.png"}
-            quality={100}
-                width={48}
-                height={40}
-            alt="Logo"
-            className="h-8 w-8 sm:h-10 sm:w-10"
-          />
-          <span className="text-black font-semibold text-lg">
-            The Squirrel
-          </span>
-        </div>
-      </div>
-    </SheetHeader>
-
-    <div className="flex flex-col space-y-4 mt-8">
-      {/* About Link */}
-      <SheetClose asChild>
-        <button
-          onClick={() =>
-            setTimeout(() => {
-              document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-            }, 100)
-          }
-          className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2 text-left"
-        >
-          About
-        </button>
-      </SheetClose>
-
-      {/* Features Dropdown */}
-      <div>
-        <button
-          className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-          onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
-        >
-          Features
-          <ChevronDown
-            className={`ml-1 h-5 w-5 transform transition-transform ${
-              mobileFeaturesOpen ? "rotate-180" : ""
-            }`}
-          />
-        </button>
-        {mobileFeaturesOpen && (
-          <div className="ml-4 mt-2 space-y-2">
-            <SheetClose asChild>
-              <button
-                onClick={() =>
-                  setTimeout(() => {
-                    document.getElementById("AI-Chat")?.scrollIntoView({ behavior: "smooth" });
-                  }, 300)
-                }
-                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
-              >
-                AI Chat
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="text-black hover:text-gray-600 transition-colors">
+                <Menu className="h-8 w-8" />
               </button>
-            </SheetClose>
-            <SheetClose asChild>
-              <button
-                onClick={() =>
-                  setTimeout(() => {
-                    document.getElementById("Triggers")?.scrollIntoView({ behavior: "smooth" });
-                  }, 300)
-                }
-                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
-              >
-                Smart DM Triggers
-              </button>
-            </SheetClose>
-            <SheetClose asChild>
-              <button
-                onClick={() =>
-                  setTimeout(() => {
-                    document.getElementById("QuickSteps")?.scrollIntoView({ behavior: "smooth" });
-                  }, 300)
-                }
-                className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
-              >
-                Quick Steps
-              </button>
-            </SheetClose>
-          </div>
-        )}
-      </div>
+            </SheetTrigger>
+            <SheetContent className="w-[300px] sm:w-[400px]">
+              <SheetHeader className="text-left">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Image
+                      src={"/assets/images/logo.png"}
+                      quality={100}
+                      width={48}
+                      height={40}
+                      alt="Logo"
+                      className="h-8 w-8 sm:h-10 sm:w-10"
+                    />
+                    <span className="text-black font-semibold text-lg">
+                      The Squirrel
+                    </span>
+                  </div>
+                </div>
+              </SheetHeader>
 
-      {/* Contact Link (external) */}
-      <SheetClose asChild>
-        <Link
-          href="#contact"
-          className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
-        >
-          Contact
-        </Link>
-      </SheetClose>
+              <div className="flex flex-col space-y-4 mt-8">
+                {/* About Link */}
+                <SheetClose asChild>
+                  <button
+                    onClick={() =>
+                      setTimeout(() => {
+                        document
+                          .getElementById("about")
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }, 100)
+                    }
+                    className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2 text-left"
+                  >
+                    About
+                  </button>
+                </SheetClose>
 
-      {/* Register Button */}
-      <div className="pt-4">
-        <SheetClose asChild>
-          <Link
-            href="https://dashboard.thesquirrel.tech"
-            className="block w-full bg-black text-white font-medium rounded-full px-6 py-3 text-center hover:bg-gray-800 transition-colors"
-          >
-            Register Now
-          </Link>
-        </SheetClose>
-      </div>
-    </div>
-  </SheetContent>
-</Sheet>
+                {/* Features Dropdown */}
+                <div>
+                  <button
+                    className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
+                    onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
+                  >
+                    Features
+                    <ChevronDown
+                      className={`ml-1 h-5 w-5 transform transition-transform ${
+                        mobileFeaturesOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {mobileFeaturesOpen && (
+                    <div className="ml-4 mt-2 space-y-2">
+                      <SheetClose asChild>
+                        <button
+                          onClick={() =>
+                            setTimeout(() => {
+                              document
+                                .getElementById("AI-Chat")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                            }, 300)
+                          }
+                          className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+                        >
+                          AI Chat
+                        </button>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <button
+                          onClick={() =>
+                            setTimeout(() => {
+                              document
+                                .getElementById("Triggers")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                            }, 300)
+                          }
+                          className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+                        >
+                          Smart DM Triggers
+                        </button>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <button
+                          onClick={() =>
+                            setTimeout(() => {
+                              document
+                                .getElementById("QuickSteps")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                            }, 300)
+                          }
+                          className="block text-gray-600 hover:text-black transition-colors py-2 text-left w-full"
+                        >
+                          Quick Steps
+                        </button>
+                      </SheetClose>
+                    </div>
+                  )}
+                </div>
 
+                {/* Contact Link (external) */}
+                <SheetClose asChild>
+                  <Link
+                    href="#contact"
+                    className="text-gray-700 hover:text-black transition-colors text-lg font-medium py-2"
+                  >
+                    Contact
+                  </Link>
+                </SheetClose>
+
+                {/* Register Button */}
+                <div className="pt-4">
+                  <SheetClose asChild>
+                    <Link
+                      href="https://dashboard.thesquirrel.tech"
+                      className="block w-full bg-black text-white font-medium rounded-full px-6 py-3 text-center hover:bg-gray-800 transition-colors"
+                    >
+                      Register Now
+                    </Link>
+                  </SheetClose>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </div>

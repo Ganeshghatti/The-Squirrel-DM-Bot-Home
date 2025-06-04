@@ -60,14 +60,16 @@ export default function Contact() {
           {!isMobile && (
             <motion.div 
               variants={itemVariants}
-              className="relative hidden md:block md:w-[30%] bg-muted"
+              className="relative hidden md:block md:w-[30%]  md:min-w-[320px] bg-muted"
             >
               <Image
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/assets/images/contact.png"
                 alt="Contact us"
                 className="object-cover"
                 fill
-                sizes="(max-width: 768px) 100vw, 30vw"
+                // sizes="(max-width: 768px) 100vw, 30vw"
+                // height={461}
+                // width={461}
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/20" />

@@ -22,7 +22,7 @@ const CTASection: React.FC = () => {
 
         <div className='hidden overflow-hidden lg:block h-[500px] w-[600px] bg-[#93b2ff] absolute   top-10 -right-10 -rotate-3 rounded-xl p-1'>
             <Image
-            src={"/assets/images/productShowcase.png"}
+            src={"/assets/images/productShowcase1.png"}
             alt="Product Showcase"
             quality={100}
             // fill

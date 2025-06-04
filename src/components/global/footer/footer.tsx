@@ -86,9 +86,9 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-white py-12 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[1fr_1fr_1fr_1.5fr] gap-4">
+    <footer className="bg-white ">
+      <div className="max-w-7xl md:px-4 my-16   p-4 mx-auto mb-0">
+        <div className="grid grid-cols-2 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[1fr_1fr_1fr_1.9fr] gap-4">
           {footerData.map((column, index) => (
             <FooterColumn
               key={index}
@@ -110,33 +110,33 @@ const Footer: React.FC = () => {
                 The Squirrel
               </span>
             </div>
-            <p className="text-[var(--neutral-400)] text-sm sm:text-base ">
+            <p className="text-[var(--neutral-400)] text-sm sm:text-base max-w-[23rem] ">
               Automate and enhance client communication via Instagram DMs using
               AI
             </p>
             <div>
-                <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
-              <Mail className="h-4 w-4" />
-              <a
-                href="https://formsubmit.co/el/info@thesquirrel.tech"
-                target="_blank"
-                className="text-sm sm:text-base hover:underline"
-              >
-                info@thesquirrel.tech
-              </a>
-            </p>
-            <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
-              <Phone className="h-4 w-4" />
-              <a
-                href="tel:+91 94496 10077"
-                className="text-sm sm:text-base hover:underline"
-              >
-                +91 94496 10077
-              </a>
-            </p>
+              <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
+                <Mail className="h-4 w-4" />
+                <a
+                  href="mailto:info@thesquirrel.tech"
+                  target="_blank"
+                  className="text-sm sm:text-base hover:underline"
+                >
+                  info@thesquirrel.tech
+                </a>
+              </p>
+              <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
+                <Phone className="h-4 w-4" />
+                <a
+                  href="tel:+91 94496 10077"
+                  className="text-sm sm:text-base hover:underline"
+                >
+                  +91 94496 10077
+                </a>
+              </p>
 
             </div>
-          
+
           </div>
         </div>
 
