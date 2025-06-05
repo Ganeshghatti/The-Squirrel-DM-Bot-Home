@@ -118,11 +118,11 @@ const Footer: React.FC = () => {
               <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
                 <Mail className="h-4 w-4" />
                 <a
-                  href="mailto:info@thesquirrel.tech"
+                  href="mailto:ganesh@thesquirrel.tech"
                   target="_blank"
                   className="text-sm sm:text-base hover:underline"
                 >
-                  info@thesquirrel.tech
+                  ganesh@thesquirrel.tech 
                 </a>
               </p>
               <p className="text-[var(--neutral-400)] text-sm sm:text-base flex flex-row items-center cursor-pointer gap-3">
