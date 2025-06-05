@@ -63,7 +63,7 @@ export default function Contact() {
               className="relative hidden md:block md:w-[30%]  md:min-w-[320px] bg-muted"
             >
               <Image
-                src="/assets/images/contact.png"
+                src="/assets/images/contact-us.jpg"
                 alt="Contact us"
                 className="object-cover"
                 fill

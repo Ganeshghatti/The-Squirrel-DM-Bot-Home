@@ -6,7 +6,7 @@ import React from "react";
 
 function QuickSteps() {
   return (
-    <section id='QuickSteps' className="py-16 md:py-24">
+    <section id='QuickSteps' className="pb-16 md:pb-24">
       <div className="max-w-6xl lg:max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <motion.div
@@ -16,9 +16,10 @@ function QuickSteps() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="relative ">
+            
+            <div className="relative  ">
               <Image
-                src={"/assets/images/QuickSteps.png"}
+                src={"/assets/images/offers.png"}
                 alt="Product Showcase"
                 quality={100}
                 // fill
@@ -26,7 +27,7 @@ function QuickSteps() {
                 width={630}
                 height={430}
                 sizes="100%"
-                className="object-cover  w-full"
+                className="object-cover rounded-3xl  w-full"
               />
             </div>
           </motion.div>
@@ -38,11 +39,11 @@ function QuickSteps() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-medium mb-4">
-              Build Smarter in
-              <br className="hidden md:block" /> 3 Quick Steps
+            Send Smart Product Offers,
+              <br className="hidden md:block" /> Instantly
             </h2>
             <p className="text-[var(--neutral-400)] mb-6">
-              From sign-up to launch, we make it fast
+            SendEngage customers with intelligent responses and personalized product recommendations.
             </p>
           </motion.div>
         </div>
