@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://smartinsta.thesquirrel.tech/"),
   title: "Squirrel | Instagram Bot - Automate & Grow",
   description:
     "Boost your Instagram sales with Squirrel, the intelligent sales bot. Automate DMs, engage customers, collect leads, and drive conversions effortlessly.",
@@ -13,10 +14,11 @@ export const metadata: Metadata = {
     title: "The Squirrel | Instagram Bot - Automate & Grow",
     description:
       "Transform your Instagram engagement into sales with The Squirrel's smart automation.",
+    url: "https://smartinsta.thesquirrel.tech",
     images: [
       // Add an image URL for social sharing previews
       {
-        url: "/assets/images/productShowcase.png",
+        url: "https://smartinsta.thesquirrel.tech/assets/images/open-graph.png",
         width: 1200,
         height: 630,
         alt: "Squirrel Instagram Sales Bot",
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Boost your Instagram sales with Squirrel, the intelligent sales bot.",
     images: [
-      "/assets/images/productShowcase.png",
+      "https://smartinsta.thesquirrel.tech/assets/images/open-graph.png",
     ],
   },
 };
