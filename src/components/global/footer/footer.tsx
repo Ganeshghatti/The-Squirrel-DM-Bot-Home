@@ -1,7 +1,6 @@
 "use client";
 import { LinkedinIcon, Mail, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface FooterColumnProps {
