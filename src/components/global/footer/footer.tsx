@@ -155,9 +155,9 @@ const Footer: React.FC = () => {
             </span>
           </div>
           <div className="text-center  text-slate-500 text-sm">
-            <Link href="https://thesquirrel.tech/">
+            <p>
               &copy; {new Date().getFullYear()} Squirrel Inc.
-            </Link>
+            </p>
           </div>
           <div className="flex space-x-3 sm:space-x-6">
             <a
