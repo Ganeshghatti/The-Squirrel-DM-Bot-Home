@@ -11,6 +11,7 @@ import UserAreSaying from "./components/userAreSaying";
 import FAQPage from "./components/FAQPage";
 import CTASection from "./components/CTASection";
 import Contact from "./components/Contact";
+import PricingPage from "./components/pricing";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <SmarterWorkflows/>
       <QuickSteps/>
       <UserAreSaying/>
+      <PricingPage/>
       <FAQPage/>
       <Contact/>
       <CTASection/>

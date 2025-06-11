@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react"; // Added useState
 
 // Animation variants (as provided by user)
-const containerVariants = {
+export const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -14,7 +14,7 @@ const containerVariants = {
   },
 };
 
-const headerVariants = {
+export const headerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -26,7 +26,7 @@ const headerVariants = {
   },
 };
 
-const textVariants = {
+export const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -190,7 +190,7 @@ const FAQPage: React.FC = () => {
         className="flex-grow px-4 sm:px-6 py-12" // Adjusted padding for responsiveness
         variants={containerVariants} // This might be redundant if parent already handles stagger, but fine
       >
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             className="text-center mb-10 sm:mb-16" // Increased bottom margin
             variants={containerVariants} // Same as above, potentially redundant
