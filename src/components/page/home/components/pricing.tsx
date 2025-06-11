@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Check, Star, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import React from "react";
+import Link from "next/link";
 
 export const containerVariants = {
   hidden: { opacity: 0 },
@@ -174,7 +175,8 @@ export default function PricingPage() {
             </CardContent>
 
             <CardFooter className="relative z-10 pt-4 mt-auto">
-              <Button
+              <Button 
+                onClick={() => window.location.href = "https://dashboard.thesquirrel.tech/"}
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group"
               >
                 Get Started Today
@@ -256,6 +258,7 @@ export default function PricingPage() {
             <CardFooter className="relative z-10 pt-4">
               <Button
                 variant="secondary"
+                onClick={() => window.location.href = "#contact"}
                 className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 py-4 font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group border-0"
               >
                 Contact Sales
